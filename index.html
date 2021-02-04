@@ -3,14 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <h1 id="title">Product Landing Page</h1>
+    <style>
+
+        #navbar {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            left: 0px;
+            top: 0px;
+            flex-wrap: wrap;
+        }
+        @media (min-device-width: 850px) {
+            #navbar {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+
+    </style>
+
+
 </head>
 
 <body>
-<header id="header">
-<!--
-    <nav id="nav-bar">
-        <a href="#home" class="nav-link">Home</a>
-    </nav>
+<nav id="navbar">
+
+    <header id="header">
+    <h1>Random text</h1>
+    <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#four" class="nav-link">Four</a>
+        <a href="#five" class="nav-link">Five</a>
+
+    </header>
+</nav>
+
+    <!--
     <div class="flex-container">
     <img id="header-img" src="boot.jpg" alt="picture of a boot">
     <video id="video" width="320" height="240" autoplay muted>
@@ -18,31 +48,48 @@
                 type="video/mp4">
     </video>
     </div>
-   -->
+-->
+<main id="main-doc">
+    <section id="home" class="main-section">
+        <header>Home</header>
+        <p>We are a shoe company</p>
+    </section><br>
 
-</header>
-<section id="home">
-    We are a shoe company
-</section><br>
+    <section id="about" class="main-section">
+        <header>about</header>
+        <p>Our neat shoes are made to allow feet to perform healthy movements.</p>
+        <p>Such a design helps feet develop naturally; especially important for walkers.</p>
+    </section><br>
 
-<section id="about">
-    Our neat shoes are made to allow feet to perform healthy movements.
-     Such a design helps feet develop naturally; especially important for walkers.
-</section><br>
+    <section id="contact" class="main-section">
+        <header>Contact</header>
+        <p>address: 4 washington lane</p>
+        <p>phone: 1-111-111-1111</p>
+        <p>email: tom@tom.com</p>
+    </section><br>
 
-<section id="contact">
-    address: 4 washington lane
-    phone: 1-111-111-1111
-    email: tom@tom.com
-</section>
+    <section id="four" class="main-section">
+        <header>Four</header>
+        <ul>
+            <li><p>We are a shoe company</p></li>
+            <li><p>that's what we do</p></li>
+            <li><p>we do it well</p></li>
+            <li><p>we make shoes</p></li>
+            <li><p>we make shoes too</p></li>
+        </ul>
+    </section><br>
 
+    <section id="five" class="main-section">
+        <header>Five</header>
+        <code>x=5</code><code>x+4</code><code>x+3</code><code>x+2</code><code>x+1</code>
+    </section><br>
 
 <form id="form" action=" https://www.freecodecamp.com/email-submit">
     <input id="email" name="email" type="email"
            placeholder="enter your email">
     <input id="submit" type="submit">
 </form>
-
+</main>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
